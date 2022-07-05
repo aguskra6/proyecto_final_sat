@@ -6,8 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Inicio - Servicio Técnico</title>
   <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
-  <script src="../bootstrap/js/jquery.slim.min.js"></script>
-  <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
   <!-------FONT--------->
   <link rel="stylesheet" href="../stylesheet.css"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,82 +21,95 @@
 
 </head>
 <body>
-<header>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top bg-primary">
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <img src="../images/menu-white.png" class="menu-icon"/>
-      </button>
-      <div class="col-6 text-center">
-        <img src="../images/index.png" class ="logo"/>
-      </div>
-      <div class="collapse navbar-collapse col-6" id="navbarTogglerDemo02">
-        <ul class="navbar-nav mr-auto mt-2 mt-md-0">
-          <li class="nav-item"><a class="nav-link" href="../index.html">INICIO </a></li>
-          <li class="nav-item "><a class="nav-link" href="servicios.html">SERVICIOS </a></li>
-          <li class="nav-item "><a class="nav-link" href="contacto.html">CONTACTO </a></li>
-          <li class="nav-item "><a class="nav-link" href="nosotros.html">NOSOTROS </a></li>
-          <li class="nav-item "><a class="nav-link" href="garantia.html">GARANTÍA </a></li>
-        </ul>
-      </div>
-  </nav>
-</header>
-  <div class="justify-content-center" id="body-contacto">
-    <div class="container" >
-      <section id="intro-forms">
-        <h3> CONTÁCTANOS </h3> 
-      </section>
-      <section id="formulario">
-        <!--FORMULARIO DE CONTACTO-->
-        <form action="forms.html" method="GET" enctype="application/x-www-form-urlencoded" >
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top bg-primary">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <img src="../images/menu-white.png" class="menu-icon"/>
+        </button>
+        <div class="col-6 text-center">
+          <img src="../images/index.png" class ="logo"/>
+        </div>
+        <div class="collapse navbar-collapse col-6" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+            <li class="nav-item"><a class="nav-link" href="../index.html">INICIO </a></li>
+            <li class="nav-item "><a class="nav-link" href="servicios.html">SERVICIOS </a></li>
+            <li class="nav-item "><a class="nav-link" href="contacto.html">CONTACTO </a></li>
+            <li class="nav-item "><a class="nav-link" href="nosotros.html">NOSOTROS </a></li>
+            <li class="nav-item "><a class="nav-link" href="garantia.html">GARANTÍA </a></li>
+          </ul>
+        </div>
+    </nav>
+  </header>
+  <div class="container">
+      <div class="justify-content-center">
+        <div>
+          <section id="intro-forms">
+            <h3> CONTÁCTANOS </h3> 
+          </section>
+
           <div class="form-style">
-            <div class= "wow animate__fadeInLeftBig" data-wow-duration="0.5s" data-wow-delay="0s">
-              <label for="nombre">Nombre completo: </label><br>
-              <input type="text" name="nombre" />
-            </div>
+            <!--FORMULARIO DE CONTACTO-->
+            <form action="forms.html" method="GET" enctype="application/x-www-form-urlencoded">
+              <div class="form-group">
+                <label for="nombre">Nombre y Apellido</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Escribe tu nombre y apellido">
+              </div>
+              <div class="form-group">
+                <label for="telefono">Teléfono</label>
+                <input type="number" class="form-control" id="telefono" placeholder="Escribe un teléfono">
+              </div>
+              <div class="form-group">
+                <label for="mail">Correo Electrónico</label>
+                <input type="text" class="form-control" id="mail" placeholder="ejemplo@gmail.com">
+              </div>
+              <div>
+                <label for="mail">Tipo de aparato</label>
+                <select class="custom-select">
+                  <option selected>Seleccionar</option>
+                  <option value="1">Nevera</option>
+                  <option value="2">Aire Acondicionado</option>
+                  <option value="4">Lavadora</option>
+                  <option value="5">Lavavajillas</option>
+                  <option value="6">Lavasecadora</option>
+                  <option value="7">Secadora</option>
+                  <option value="8">Cocina a Gas</option>
+                  <option value="9">Equipo Industrial</option>
+                  <option value="10">Horno Eléctrico</option>
+                  <option value="11">Frigorífico</option>
+                </select>
+              </div>
 
-            <div class= "wow animate__fadeInRightBig" data-wow-duration="0.6s" data-wow-delay="0s"> 
-              <label for="telefono">Teléfono: </label><br>
-              <input type="text" name="telefono" />
-            </div> 
+              <div class="form-group">
+                <label for="descripcion"> Descripción de la avería que tiene el equipo </label>
+                <input class="form-control" type="text" placeholder="Escribe aqui">
+              </div>
+              
+              <div class="form-group"> 
+                <label for="garantia"> ¿El aparato está en garantía? </label>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio1">Si</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio2">No</label>
+                </div>
+              </div>  
 
-            <div class= "wow animate__fadeInLeftBig" data-wow-duration="0.7s" data-wow-delay="0s"> 
-              <label for="correo"> Correo electrónico: </label><br>
-              <input type="text" name="correo" />
-            </div> 
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                <label class="custom-control-label" for="customCheck1">He leído y acepto la Política de privacidad</label>
+              </div>
 
-            <div class= "wow animate__fadeInRightBig" data-wow-duration="0.8s" data-wow-delay="0s">
-              <label for="aparato"> Tipo de aparato: </label><br>
-              <input type="text" name="aparato" />
-            </div> 
-
-            <div class= "wow animate__fadeInLeftBig" data-wow-duration="0.9s" data-wow-delay="0s">
-              <label for="descripcion"> Descripción de la avería </label><br />
-              <textarea name="descripcion" id="descripcion" rows="8" cols="40"></textarea>
-            </div>
-
-            <div class= "wow animate__fadeInRightBig" data-wow-duration="1s" data-wow-delay="0s">
-              <label for="garantia"> ¿El aparato está en garantía? </label><br />
-              <input type="radio" name="garantia" id="Si" value="si" />
-              <label for="Si">Si</label><br>
-              <input type="radio" name="garantia" id="no" value="no" />
-              <label for="No">No</label><br>
-            </div>
-
-            <div class= "wow animate__fadeInLeftBig" data-wow-duration="1.s" data-wow-delay="0s">
-              <label for="politica"> He leído y acepto la Política de privacidad </label>
-              <input type="checkbox" name="politica" id="polictica" value="polictica" />
-            </div>
-
-            <div class= "wow animate__fadeInRighttBig" data-wow-duration="1.2s" data-wow-delay="0s">  
-              <input type="submit" value="Enviar"/>
-            </div>
-          </div>  
-        </form>
-      </section>
-    </div>
+              <div id="enviar">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </div>
+            </form>
+            <!--FIN FORMULARIO DE CONTACTO-->
+          </div>
+        </div>
+      </div>
   </div>  
-      <!--FIN FORMULARIO DE CONTACTO-->
-  </section>
 <footer>
 <div class=" text-center">
   <div class="container footer-top">
@@ -114,5 +125,7 @@
     </div>
 </div>
 </footer>
+<script src="../bootstrap/js/jquery.slim.min.js"></script>
+<script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
