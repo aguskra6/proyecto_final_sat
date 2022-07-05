@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio - Servicio Técnico</title>
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+  <script src="../bootstrap/js/jquery.slim.min.js"></script>
+  <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-------FONT--------->
+  <link rel="stylesheet" href="../stylesheet.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;500&display=swap" rel="stylesheet">
+  <!-------------------->
+  <link rel="shortcut icon" href="../images/Logo redondo.png" >
+  <link href="../css/animate.css" rel="stylesheet">
+  <script src="../css/wow.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+
+</head>
+<body>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top bg-primary">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <img src="../images/menu-white.png" class="menu-icon"/>
+      </button>
+      <div class="col-6 text-center">
+        <img src="../images/index.png" class ="logo"/>
+      </div>
+      <div class="collapse navbar-collapse col-6" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+          <li class="nav-item"><a class="nav-link" href="../index.html">INICIO </a></li>
+          <li class="nav-item "><a class="nav-link" href="servicios.html">SERVICIOS </a></li>
+          <li class="nav-item "><a class="nav-link" href="contacto.html">CONTACTO </a></li>
+          <li class="nav-item "><a class="nav-link" href="nosotros.html">NOSOTROS </a></li>
+          <li class="nav-item "><a class="nav-link" href="garantia.html">GARANTÍA </a></li>
+        </ul>
+      </div>
+  </nav>
+</header>
+  <div class="justify-content-center" id="body-contacto">
+    <div class="container" >
+      <section id="intro-forms">
+        <h3> CONTÁCTANOS </h3> 
+      </section>
+      <section id="formulario">
+        <!--FORMULARIO DE CONTACTO-->
+        <form action="forms.html" method="GET" enctype="application/x-www-form-urlencoded" >
+          <div class="form-style">
+            <div class= "wow animate__fadeInLeftBig" data-wow-duration="0.5s" data-wow-delay="0s">
+              <label for="nombre">Nombre completo: </label><br>
+              <input type="text" name="nombre" />
+            </div>
+
+            <div class= "wow animate__fadeInRightBig" data-wow-duration="0.6s" data-wow-delay="0s"> 
+              <label for="telefono">Teléfono: </label><br>
+              <input type="text" name="telefono" />
+            </div> 
+
+            <div class= "wow animate__fadeInLeftBig" data-wow-duration="0.7s" data-wow-delay="0s"> 
+              <label for="correo"> Correo electrónico: </label><br>
+              <input type="text" name="correo" />
+            </div> 
+
+            <div class= "wow animate__fadeInRightBig" data-wow-duration="0.8s" data-wow-delay="0s">
+              <label for="aparato"> Tipo de aparato: </label><br>
+              <input type="text" name="aparato" />
+            </div> 
+
+            <div class= "wow animate__fadeInLeftBig" data-wow-duration="0.9s" data-wow-delay="0s">
+              <label for="descripcion"> Descripción de la avería </label><br />
+              <textarea name="descripcion" id="descripcion" rows="8" cols="40"></textarea>
+            </div>
+
+            <div class= "wow animate__fadeInRightBig" data-wow-duration="1s" data-wow-delay="0s">
+              <label for="garantia"> ¿El aparato está en garantía? </label><br />
+              <input type="radio" name="garantia" id="Si" value="si" />
+              <label for="Si">Si</label><br>
+              <input type="radio" name="garantia" id="no" value="no" />
+              <label for="No">No</label><br>
+            </div>
+
+            <div class= "wow animate__fadeInLeftBig" data-wow-duration="1.s" data-wow-delay="0s">
+              <label for="politica"> He leído y acepto la Política de privacidad </label>
+              <input type="checkbox" name="politica" id="polictica" value="polictica" />
+            </div>
+
+            <div class= "wow animate__fadeInRighttBig" data-wow-duration="1.2s" data-wow-delay="0s">  
+              <input type="submit" value="Enviar"/>
+            </div>
+          </div>  
+        </form>
+      </section>
+    </div>
+  </div>  
+      <!--FIN FORMULARIO DE CONTACTO-->
+  </section>
+<footer>
+<div class=" text-center">
+  <div class="container footer-top">
+    Horario atención telefónica: L - Sab / 9:00 - 20:00
+    <br>
+    Horario tienda : L - Vier / 9:00 a 14:00 - 17:00 a 20:00
+  </div>  
+  <div class="footer-bottom">
+    <div class="container">
+    Las marcas y logotipos son indicados únicamente a título informativo y son propiedad de sus respectivos propietarios.<br> No atendemos ni cubrimos garantías. Servicio técnico no oficial de las marcas. <br>
+    Desplazamiento gratuito si se acepta presupuesto de reparación.<br>
+    © SAT PALMA
+    </div>
+</div>
+</footer>
+</body>
+</html>
