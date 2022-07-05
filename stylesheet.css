@@ -1,0 +1,489 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html,body {
+    width: 100%;
+    height: 100vh;
+}
+body {
+    background-color: #dddddd;
+    font-family: 'Poppins', sans-serif;
+}
+.p {
+    font-size: 1rem;
+    line-height: 2rem;
+}
+h3 {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+h4 {
+    text-align: center;
+}
+h5 {
+    font-size: 18px;
+}
+/*--------------------MENU-------------------*/
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    box-shadow: 5px 0 10px;  
+}
+.bg-light {
+    background-color: #253759!important;
+}
+.navbar-light .navbar-nav .nav-link {
+    color:rgb(255, 255, 255);
+}
+.nav-link:hover {
+    color:rgba(150, 167, 194, 0.758)
+}
+.menu-icon {
+    width: 1.5rem;
+}
+.logo {
+    align-items: center;
+    height: 2.5rem;
+}
+.showbox {
+    color: #ff35e7;
+}
+/*-------------------*/
+/*-------------------INDEX-------------------*/
+.body-index {
+    background-image: url(./images/Electro/modern-kitchen-1772638_1920.jpg) ;
+    background-attachment: fixed;
+    border-image-repeat: none;
+
+}
+.top-section {
+    background-color: #3636369a;
+    color: rgb(255, 255, 255); 
+    padding-bottom: 8%;  
+    width: 100%;
+    padding-top: 9rem;
+}
+.title {
+    font-size: 2.8rem;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(234, 234, 234);
+}
+#call {
+    text-align: center; 
+    align-items: center;
+    align-content: center;
+
+}
+#p-number {
+    padding-top: 3rem;
+    font-size: 1.4rem;
+    color: rgb(234, 234, 234);;
+}
+#box-number {
+    background-color: #000000;
+    width: fit-content;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5rem 0.9rem;
+    border-radius: 1rem;
+}
+#box-number:hover {
+    background-color: #313138;
+}
+#number {
+    color: rgb(234, 234, 234);
+    text-align: center ;
+    font-size: 1.8rem;
+    margin-bottom: 0%;
+}
+
+.div-intro {
+    background-color:#ddddddd1;
+    height: fit-content;
+    box-sizing: border-box;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+#img-electro {
+    width: 100%;
+}
+.intro {
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 3rem;
+}
+
+/*-----Boxes-----*/
+#final-index {
+    background-color: #3636369a;
+    width: 100%;
+    padding-top: 6rem;
+}
+#title-up-boxes {
+    text-align: center;
+    color: #e6e6e6;
+    font-size: 1.8rem;
+    padding-bottom: 3rem;
+}
+.box-unit-i {
+    text-align: center;
+    background-color:rgba(198, 198, 198, 0.759);
+    color: black;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+.box-unit-i:hover {
+    background-color: #262a32;
+    color: #e8e8e8;
+}
+.box-title-index {
+    padding-bottom: 0.6rem;
+    font-size: 1.5;
+}
+.electro {
+    margin-top: 0.7rem;
+    height: 5.8rem;
+}
+#fan-coil {
+    margin-top: 1.7rem;
+    width: 6rem;
+}
+#cocina-indus {
+    width: 6.5rem;
+}
+#lavav {
+    margin-top: 1rem;
+    height: 5rem;
+}
+#frigo {
+    height: 6.5rem;
+}
+/*------------*/
+.footer-top-index {
+    font-size: 0.8rem;
+    text-align: center;
+    padding-top: 5.2%;
+    padding-bottom: 1rem;
+    color: #cacaca;
+    background-color: #3636369a;
+}   
+.footer-bottom-index {
+    color: rgb(167, 167, 167);
+    font-size: 0.5rem;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #141414bd;
+}
+/*------------------------------------------*/
+
+/*------------------SERVICIOS---------------*/
+.intro-servicios {
+    padding-top: 5rem;
+}
+.intro-servicios h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.intro-servicios h4 {
+    font-size: 1.1rem;
+    line-height: 2.3rem;
+}
+.box-unit-s {
+    margin: 1rem;
+    background-color:#25375920;
+    color: rgb(0, 0, 0);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.box-title-servicios {
+    color: #253759;
+    font-weight: bold;
+    padding-bottom: 0.5rem;
+}
+.boxes {
+    padding-top: 2rem;
+}
+/*--------------------------------------------*/
+/*------------------CONTACTO------------------*/
+#intro-forms {
+    padding-top: 5rem;
+}
+#intro-forms h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.form-style {
+    text-align: center;
+    line-height: 1.7rem;
+}
+.form-style div {
+    padding-top: 1.5rem;
+}
+/*--------------------------------------------*/
+/*-------------------NOSOTROS------------------*/
+.intro-nosotros {
+    padding-top: 5rem;
+}
+.intro-nosotros h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.intro-nosotros h4 {
+    font-size: 1.1rem;
+    line-height: 2.3rem;
+}
+.box-unit-n {
+    text-align: center;
+    background-color:#25375920;
+    color: #000000;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 20px;
+}
+.box-unit-n p {
+    color:#242424;
+}
+.box-unit-n h5 {
+    color: #253759;
+    font-weight: bold;
+}
+/*--------------------------------------------*/
+/*-------------------GARANTIA-----------------*/
+.intro-garantia {
+    padding-top: 5rem; 
+}
+.intro-garantia h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.intro-garantia h4 {
+    font-size: 1.1rem;
+    line-height: 2.3rem;
+}
+.p-garantia {
+    padding-top: 1rem;
+}
+.ul-garantia {
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+    color: rgb(71, 71, 71);
+}
+.p-garantia p {
+    color: #25345b;
+    font-size: 1rem;
+}
+.sub-title {
+    color: #25345b;
+}
+/*--------------------------------------------*/
+
+/*--------------------FOOTER------------------*/
+.footer-top {
+    font-size: 0.8rem;
+    margin-top: 7.2%;
+    padding-bottom: 1rem;
+    color: #000000;
+    width: 100%;
+}   
+.footer-bottom {
+    color: rgb(112, 112, 112);
+    font-size: 0.5rem;
+    margin-top: 2%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #cdcdcd;
+    width: 100%;
+}
+
+/*---------------------------------------------*/
+
+@media screen and (max-width: 579px) {
+    
+    /*--------------------MENU-------------------*/
+    .logo {
+        height: 1.4rem;
+    }
+    .menu-icon {
+        width: 0.9rem;
+    }
+    .navbar {
+        padding: 0.08rem 0.4rem;
+    }
+    /*------------------------------------------*/  
+    
+    /*--------------------FOOTER----------------*/
+    .footer-top {
+        font-size: 0.6rem;
+        padding-top: 3rem;
+      
+    }   
+    .footer-bottom {
+        font-size: 0.4rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+ 
+    .footer-top-index {
+        font-size: 0.6rem;
+        padding-top: 3rem;
+    }   
+    .footer-bottom-index {
+        font-size: 0.4rem;
+    }
+
+    /*-------------------------------------------*/ 
+    /*--------------------INDEX------------------*/
+    .title {
+        font-size: 1.4rem;
+    }
+    .top-section {
+        padding-bottom: 8%;  
+        padding-top: 4rem;
+    }
+    #call {
+        text-align: center; 
+    }
+    #p-number {
+        font-size: 0.5rem;
+    }
+    #number {
+        font-size: 0.7rem;
+    }
+    .intro {
+        font-size: 0.9rem;
+        text-align: center;
+        line-height: 1.9rem;
+    }
+    #final-index {
+        padding-top: 2rem;
+    }
+    /*-----Boxes-----*/
+    #title-up-boxes {
+        color: #e6e6e6;
+        font-size: 1rem;
+        padding-bottom: 1rem;
+    }
+    .box-unit-i {
+        margin: 0.4rem;
+    }
+    .box-title-index {
+        padding-bottom: 0.2rem;
+        font-size: 0.8rem;
+    }
+    .electro {
+        margin-top: 0.7rem;
+        height: 3.5rem;
+    }
+    #fan-coil {
+        margin-top: 1.7rem;
+        width: 3.8rem;
+    }
+    #cocina-indus {
+        width: 4rem;
+    }
+    #lavav {
+        margin-top: 1rem;
+        height: 3rem;
+    }
+    #frigo {
+        height: 4rem;
+    }
+    /*------------*/
+    /*------------------SERVICIOS---------------*/
+    .intro-servicios {
+        padding-top: 4rem;
+    }
+    .intro-servicios h3 {
+        font-size: 1rem;
+        padding-bottom: 1rem;
+    }
+    .intro-servicios h4 {
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+    }
+    .box-unit-s {
+        margin: 0.5rem;
+    }
+    .box-title-servicios {
+        padding-bottom: 0.2rem;
+        font-size: 0.9rem;
+    }
+    .box-title-servicios p {
+        font-size: 0.9rem;
+    }
+
+    /*----------------------------------------*/
+    /*------------------CONTACTO------------------*/
+    #intro-forms {
+        padding-top: 4rem;
+    }
+    #intro-forms h3 {
+        font-size: 1rem;
+        padding-bottom: 1rem;
+    }
+    .form-style {
+        line-height: 1.5rem;
+    }
+    .form-style div {
+        padding-top: 1rem;
+    }
+    /*--------------------------------------------*/
+    /*----------NOSOTROS-----------------*/
+    .intro-nosotros {
+        padding-top: 4rem;
+    }
+    .intro-nosotros h3 {
+        font-size: 1rem;
+        padding-bottom: 1rem;
+    }
+    .intro-nosotros h4 {
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+    }
+    .boxes-nosotros {
+        padding-top: 1rem;
+    }
+    .box-unit-n {
+        margin: 0.5rem;
+    }
+    .box-unit-n p{
+        font-size: 0.9rem;
+    }
+    .box-unit-n h5 {
+        font-size: 1rem;
+    }
+    /*--------------------------------------------*/
+    /*-------------------GARANTIA-----------------*/
+    .intro-garantia {
+        padding-top: 4rem; 
+    }
+    .intro-garantia h3 {
+        font-size: 1rem;
+        padding-bottom: 1rem;
+    }
+    .intro-garantia h4 {
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+    .ul-garantia {
+        padding-top: 0.5rem;
+        font-size: 0.9rem;
+    }
+    .p-garantia p {
+        font-size: 0.9rem;
+    }
+    .sub-title {
+        font-size: 0.9rem;
+    }
+/*--------------------------------------------*/
+ }
