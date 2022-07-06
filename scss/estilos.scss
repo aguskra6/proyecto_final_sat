@@ -1,3 +1,6 @@
+$font-paragraph: 1rem;
+$padding-top-page: 7rem;
+
 * {
     padding: 0px;
     margin: 0px;
@@ -12,7 +15,7 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 .p {
-    font-size: 1rem;
+    font-size: $font-paragraph;
     line-height: 2rem;
 }
 h3 {
@@ -21,9 +24,6 @@ h3 {
 }
 h4 {
     text-align: center;
-}
-h5 {
-    font-size: 18px;
 }
 /*--------------------MENU-------------------*/
 .navbar {
@@ -55,7 +55,7 @@ h5 {
 /*-------------------*/
 /*-------------------INDEX-------------------*/
 .body-index {
-    background-image: url(./images/Electro/modern-kitchen-1772638_1920.jpg) ;
+    background-image: url(../images/Electro/modern-kitchen-1772638_1920.jpg) ;
     background-attachment: fixed;
     border-image-repeat: none;
 
@@ -65,7 +65,7 @@ h5 {
     color: rgb(255, 255, 255); 
     padding-bottom: 8%;  
     width: 100%;
-    padding-top: 9rem;
+    padding-top: $padding-top-page + 4;
 }
 .title {
     font-size: 2.8rem;
@@ -77,7 +77,6 @@ h5 {
     text-align: center; 
     align-items: center;
     align-content: center;
-
 }
 #p-number {
     padding-top: 3rem;
@@ -187,9 +186,8 @@ h5 {
 
 /*------------------SERVICIOS---------------*/
 .intro-servicios {
-    padding-top: 5rem;
-}
-.intro-servicios h3 {
+    padding-top: $padding-top-page;
+
     & h3 {
         font-size: 1.3rem;
         font-weight: bold;
@@ -197,7 +195,7 @@ h5 {
     & h4 {
         font-size: 1.1rem;
         line-height: 2.3rem;
-    }   
+    }  
 }
 .box-unit-s {
     margin: 1rem;
@@ -217,7 +215,7 @@ h5 {
 /*--------------------------------------------*/
 /*------------------CONTACTO------------------*/
 #intro-forms {
-    padding-top: 5rem;
+    padding-top: $padding-top-page;
 
     & h3 {
         font-size: 1.3rem;
@@ -225,7 +223,6 @@ h5 {
     }
 }
 .form-style {
-    text-align: center;
     line-height: 1.7rem;
 
     & div {
@@ -236,7 +233,7 @@ h5 {
 /*--------------------------------------------*/
 /*-------------------NOSOTROS------------------*/
 .intro-nosotros {
-    padding-top: 5rem;
+    padding-top: $padding-top-page;
 
     & h3 {
         font-size: 1.3rem;
@@ -266,7 +263,7 @@ h5 {
 /*--------------------------------------------*/
 /*-------------------GARANTIA-----------------*/
 .intro-garantia {
-    padding-top: 5rem; 
+    padding-top: $padding-top-page; 
 
     & h3 {
         font-size: 1.3rem;
@@ -317,6 +314,7 @@ h5 {
 
 /*---------------------------------------------*/
 
+$padding-top-page-579: 4rem;
 @media screen and (max-width: 579px) {
     
     /*--------------------MENU-------------------*/
@@ -358,7 +356,7 @@ h5 {
     }
     .top-section {
         padding-bottom: 8%;  
-        padding-top: 4rem;
+        padding-top: $padding-top-page-579 + 1;
     }
     #call {
         text-align: center; 
@@ -411,15 +409,16 @@ h5 {
     /*------------*/
     /*------------------SERVICIOS---------------*/
     .intro-servicios {
-        padding-top: 4rem;
-    }
-    .intro-servicios h3 {
-        font-size: 1rem;
-        padding-bottom: 1rem;
-    }
-    .intro-servicios h4 {
-        font-size: 0.9rem;
-        line-height: 1.5rem;
+        padding-top: $padding-top-page-579;
+
+        & h3 {
+            font-size: 1rem;
+            padding-bottom: 1rem;
+        }
+        & h4 {
+            font-size: 0.9rem;
+            line-height: 1.5rem;
+        }
     }
     .box-unit-s {
         margin: 0.5rem;
@@ -427,71 +426,78 @@ h5 {
     .box-title-servicios {
         padding-bottom: 0.2rem;
         font-size: 0.9rem;
+        
+        & p {
+            font-size: 0.9rem;
+        }
     }
-    .box-title-servicios p {
-        font-size: 0.9rem;
-    }
-
     /*----------------------------------------*/
     /*------------------CONTACTO------------------*/
     #intro-forms {
-        padding-top: 4rem;
-    }
-    #intro-forms h3 {
-        font-size: 1rem;
-        padding-bottom: 1rem;
+        padding-top: $padding-top-page-579;
+
+        & h3 {
+            font-size: 1rem;
+            padding-bottom: 1rem;
+        }
     }
     .form-style {
         line-height: 1.5rem;
-    }
-    .form-style div {
-        padding-top: 1rem;
+
+        & div {
+            padding-top: 1rem;
+        }
     }
     /*--------------------------------------------*/
     /*----------NOSOTROS-----------------*/
     .intro-nosotros {
-        padding-top: 4rem;
-    }
-    .intro-nosotros h3 {
-        font-size: 1rem;
-        padding-bottom: 1rem;
-    }
-    .intro-nosotros h4 {
-        font-size: 0.9rem;
-        line-height: 1.5rem;
+        padding-top: $padding-top-page-579;
+
+        & h3 {
+            font-size: 1rem;
+            padding-bottom: 1rem;
+        }
+        & h4 {
+            font-size: 0.9rem;
+            line-height: 1.5rem;
+        }
     }
     .boxes-nosotros {
         padding-top: 1rem;
     }
     .box-unit-n {
         margin: 0.5rem;
-    }
-    .box-unit-n p{
-        font-size: 0.9rem;
-    }
-    .box-unit-n h5 {
-        font-size: 1rem;
+
+        & p {
+            font-size: 0.9rem;
+        }
+        & h5 {
+            font-size: 1rem;
+        }
     }
     /*--------------------------------------------*/
     /*-------------------GARANTIA-----------------*/
     .intro-garantia {
-        padding-top: 4rem; 
-    }
-    .intro-garantia h3 {
-        font-size: 1rem;
-        padding-bottom: 1rem;
-    }
-    .intro-garantia h4 {
-        font-size: 0.9rem;
-        line-height: 1.5rem;
-        padding-bottom: 1.5rem;
+        padding-top: $padding-top-page-579; 
+
+        & h3 {
+            font-size: 1rem;
+            padding-bottom: 1rem;
+        }
+        & h4 {
+            font-size: 0.9rem;
+            line-height: 1.5rem;
+            padding-bottom: 1.5rem;
+        }
     }
     .ul-garantia {
         padding-top: 0.5rem;
         font-size: 0.9rem;
     }
-    .p-garantia p {
+    .p-garantia {
+        & p {
         font-size: 0.9rem;
+        }
     }
     .sub-title {
         font-size: 0.9rem;
