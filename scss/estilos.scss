@@ -58,7 +58,7 @@ h4 {
     background-image: url(../images/Electro/modern-kitchen-1772638_1920.jpg) ;
     background-attachment: fixed;
     border-image-repeat: none;
-
+    
 }
 .top-section {
     background-color: #3636369a;
@@ -149,20 +149,27 @@ h4 {
 }
 .electro {
     margin-top: 0.7rem;
-    height: 5.8rem;
+    height: 6rem;
 }
 #fan-coil {
-    margin-top: 1.7rem;
-    width: 6rem;
+    padding-top: 1.7rem;
+    width: 8rem;
 }
 #cocina-indus {
-    width: 6.5rem;
+    width: 7rem;
 }
 #lavav {
     margin-top: 1rem;
     height: 5rem;
 }
+#horno {
+    margin-top: 0.7rem;
+    height: 5.5rem;
+}
 #frigo {
+    height: 6.5rem;
+}
+#nevera {
     height: 6.5rem;
 }
 /*------------*/
@@ -393,8 +400,8 @@ $padding-top-page-579: 4rem;
         height: 3.5rem;
     }
     #fan-coil {
-        margin-top: 1.7rem;
-        width: 3.8rem;
+        padding-top: 1.7rem;
+        width: 4.5rem;
     }
     #cocina-indus {
         width: 4rem;
@@ -403,7 +410,13 @@ $padding-top-page-579: 4rem;
         margin-top: 1rem;
         height: 3rem;
     }
+    #horno {
+        height: 3rem;
+    }
     #frigo {
+        height: 4rem;
+    }
+    #nevera {
         height: 4rem;
     }
     /*------------*/
