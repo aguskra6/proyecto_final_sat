@@ -36,14 +36,25 @@ h4 {
 .bg-light {
     background-color: #253759!important;
 }
-.navbar-light .navbar-nav .nav-link {
-    color:rgb(255, 255, 255);
+.navbar-light  {
+    .navbar-nav {
+        .nav-link {
+            color:rgb(255, 255, 255);
+            &:hover {
+                color:#4d5d7c;
+            }
+        }
+    }
+    
 }
-.nav-link:hover {
-    color:rgba(150, 167, 194, 0.758)
-}
+
 .menu-icon {
     width: 1.5rem;
+}
+.navbar-light {
+    .navbar-toggler {
+        border-color: #253759;
+    }
 }
 .logo {
     align-items: center;
@@ -329,10 +340,10 @@ $padding-top-page-579: 4rem;
         height: 1.4rem;
     }
     .menu-icon {
-        width: 0.9rem;
+        width: 1.2rem;
     }
     .navbar {
-        padding: 0.08rem 0.4rem;
+        padding: 0.3rem 0.4rem;
     }
     /*------------------------------------------*/  
     
