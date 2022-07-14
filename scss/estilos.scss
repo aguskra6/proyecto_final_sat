@@ -27,13 +27,9 @@ h4 {
 }
 /*--------------------MENU-------------------*/
 .navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    padding: 0.5rem 1rem;
     box-shadow: 5px 0 10px;  
 }
-.bg-light {
+.blue {
     background-color: #253759!important;
 }
 .navbar-light  {
@@ -41,13 +37,23 @@ h4 {
         .nav-link {
             color:rgb(255, 255, 255);
             &:hover {
-                color:#4d5d7c;
+                color:#747f9b;
+                font-size: 0.97rem;
+            }
+            padding-bottom: 0%;
+        }
+        .active {
+            .nav-link {
+                color:rgb(255, 255, 255);
+                border-bottom: 1px solid;
+                &:hover {
+                    font-size: 1rem;
+                    color: rgb(255, 255, 255);
+                }
             }
         }
     }
-    
 }
-
 .menu-icon {
     width: 1.5rem;
 }
@@ -60,16 +66,12 @@ h4 {
     align-items: center;
     height: 2.5rem;
 }
-.showbox {
-    color: #ff35e7;
-}
 /*-------------------*/
 /*-------------------INDEX-------------------*/
 .body-index {
     background-image: url(../images/Electro/modern-kitchen-1772638_1920.jpg) ;
     background-attachment: fixed;
     border-image-repeat: none;
-    
 }
 .top-section {
     background-color: #3636369a;
@@ -82,7 +84,6 @@ h4 {
     font-size: 2.8rem;
     text-align: center;
     font-weight: bold;
-    color: rgb(234, 234, 234);
 }
 #call {
     text-align: center; 
@@ -222,6 +223,10 @@ h4 {
     padding: 1rem;
     border-radius: 1rem;
 }
+.box-unit-s-b {
+    @extend .box-unit-s;
+    background-color: #777777;
+}
 .box-title-servicios {
     color: #253759;
     font-weight: bold;
@@ -262,14 +267,16 @@ h4 {
         line-height: 2.3rem;
     }
 }
-.box-unit-n {
+@mixin box-unit-n-example ($background-color, $color) {
+    background-color: $background-color;
+    color: $color;
     text-align: center;
-    background-color:#25375920;
-    color: #000000;
     padding: 1rem;
     margin: 1rem;
     border-radius: 20px;
-
+}
+.box-unit-n {
+    @include box-unit-n-example (#25375920, #000000);
     & p {
         color:#242424;
     }
@@ -278,6 +285,7 @@ h4 {
         font-weight: bold;
     }
 } 
+
 /*--------------------------------------------*/
 /*-------------------GARANTIA-----------------*/
 .intro-garantia {
@@ -329,9 +337,24 @@ h4 {
     background-color: #cdcdcd;
     width: 100%;
 }
+.red-social {
+    padding-top: 1rem;
+}
+$redes: (
+    facebook: #3b5998,
+    instagram:#e03ed0
+);
+@each $red_social, $color in $redes {
+    .btn--#{$red_social} {
+        color: $color;
+        font-size: 1.5rem;
+        &:hover {
+            color: #25345b;
+        }
 
+    }
+}
 /*---------------------------------------------*/
-
 $padding-top-page-579: 4rem;
 @media screen and (max-width: 579px) {
     
