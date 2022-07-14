@@ -25,7 +25,8 @@ h3 {
 h4 {
     text-align: center;
 }
-/*--------------------MENU-------------------*/
+
+/*--------------------NAV-------------------*/
 .navbar {
     box-shadow: 5px 0 10px;  
 }
@@ -66,7 +67,7 @@ h4 {
     align-items: center;
     height: 2.5rem;
 }
-/*-------------------*/
+
 /*-------------------INDEX-------------------*/
 .body-index {
     background-image: url(../images/Electro/modern-kitchen-1772638_1920.jpg) ;
@@ -130,7 +131,7 @@ h4 {
     line-height: 3rem;
 }
 
-/*-----Boxes-----*/
+           /*-----Boxes-----*/
 #final-index {
     background-color: #3636369a;
     width: 100%;
@@ -184,7 +185,7 @@ h4 {
 #nevera {
     height: 6.5rem;
 }
-/*------------*/
+     /*-------Footer Index------*/
 .footer-top-index {
     font-size: 0.8rem;
     text-align: center;
@@ -201,7 +202,6 @@ h4 {
     padding-bottom: 2rem;
     background-color: #141414bd;
 }
-/*------------------------------------------*/
 
 /*------------------SERVICIOS---------------*/
 .intro-servicios {
@@ -235,8 +235,8 @@ h4 {
 .boxes {
     padding-top: 2rem;
 }
-/*--------------------------------------------*/
-/*------------------CONTACTO------------------*/
+
+/*------------------CONTACTO-----------------*/
 #intro-forms {
     padding-top: $padding-top-page;
 
@@ -253,8 +253,7 @@ h4 {
     }
 }
 
-/*--------------------------------------------*/
-/*-------------------NOSOTROS------------------*/
+/*-----------------NOSOTROS-----------------*/
 .intro-nosotros {
     padding-top: $padding-top-page;
 
@@ -286,8 +285,7 @@ h4 {
     }
 } 
 
-/*--------------------------------------------*/
-/*-------------------GARANTIA-----------------*/
+/*------------------GARANTIA-----------------*/
 .intro-garantia {
     padding-top: $padding-top-page; 
 
@@ -318,7 +316,6 @@ h4 {
 .sub-title {
     color: #25345b;
 }
-/*--------------------------------------------*/
 
 /*--------------------FOOTER------------------*/
 .footer-top {
@@ -354,11 +351,12 @@ $redes: (
 
     }
 }
-/*---------------------------------------------*/
+
+/*------------------(Media Query)------------------*/
 $padding-top-page-579: 4rem;
 @media screen and (max-width: 579px) {
     
-    /*--------------------MENU-------------------*/
+    /*--------------------(MENU)-------------------*/
     .logo {
         height: 1.4rem;
     }
@@ -368,9 +366,8 @@ $padding-top-page-579: 4rem;
     .navbar {
         padding: 0.3rem 0.4rem;
     }
-    /*------------------------------------------*/  
     
-    /*--------------------FOOTER----------------*/
+    /*--------------------(FOOTER)----------------*/
     .footer-top {
         font-size: 0.6rem;
         padding-top: 3rem;
@@ -390,8 +387,7 @@ $padding-top-page-579: 4rem;
         font-size: 0.4rem;
     }
 
-    /*-------------------------------------------*/ 
-    /*--------------------INDEX------------------*/
+    /*--------------------(INDEX)------------------*/
     .title {
         font-size: 1.4rem;
     }
@@ -416,7 +412,7 @@ $padding-top-page-579: 4rem;
     #final-index {
         padding-top: 2rem;
     }
-    /*-----Boxes-----*/
+                        /*-----Boxes-----*/
     #title-up-boxes {
         color: #e6e6e6;
         font-size: 1rem;
@@ -453,8 +449,8 @@ $padding-top-page-579: 4rem;
     #nevera {
         height: 4rem;
     }
-    /*------------*/
-    /*------------------SERVICIOS---------------*/
+    
+    /*------------------(SERVICIOS)---------------*/
     .intro-servicios {
         padding-top: $padding-top-page-579;
 
@@ -478,8 +474,8 @@ $padding-top-page-579: 4rem;
             font-size: 0.9rem;
         }
     }
-    /*----------------------------------------*/
-    /*------------------CONTACTO------------------*/
+    
+    /*------------------(CONTACTO)----------------*/
     #intro-forms {
         padding-top: $padding-top-page-579;
 
@@ -495,8 +491,8 @@ $padding-top-page-579: 4rem;
             padding-top: 1rem;
         }
     }
-    /*--------------------------------------------*/
-    /*----------NOSOTROS-----------------*/
+    
+    /*-----------------(NOSOTROS)-----------------*/
     .intro-nosotros {
         padding-top: $padding-top-page-579;
 
@@ -522,8 +518,8 @@ $padding-top-page-579: 4rem;
             font-size: 1rem;
         }
     }
-    /*--------------------------------------------*/
-    /*-------------------GARANTIA-----------------*/
+    
+    /*------------------(GARANTIA)----------------*/
     .intro-garantia {
         padding-top: $padding-top-page-579; 
 
@@ -549,5 +545,4 @@ $padding-top-page-579: 4rem;
     .sub-title {
         font-size: 0.9rem;
     }
-/*--------------------------------------------*/
  }
