@@ -57,6 +57,7 @@ h4 {
 }
 .menu-icon {
     width: 1.5rem;
+    color: rgb(255, 255, 255);
 }
 .navbar-light {
     .navbar-toggler {
@@ -351,7 +352,9 @@ $redes: (
 
     }
 }
-
+ul.list-inline {
+    margin-bottom: 0%;
+}
 /*------------------(Media Query)------------------*/
 $padding-top-page-579: 4rem;
 @media screen and (max-width: 579px) {
