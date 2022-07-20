@@ -1,5 +1,6 @@
 $font-paragraph: 1rem;
 $padding-top-page: 7rem;
+$color-empresa: #253759;
 
 * {
     padding: 0px;
@@ -31,7 +32,7 @@ h4 {
     box-shadow: 5px 0 10px;  
 }
 .blue {
-    background-color: #253759!important;
+    background-color: $color-empresa!important;
 }
 .navbar-light  {
     .navbar-nav {
@@ -61,7 +62,7 @@ h4 {
 }
 .navbar-light {
     .navbar-toggler {
-        border-color: #253759;
+        border-color: $color-empresa;
     }
 }
 .logo {
@@ -186,6 +187,9 @@ h4 {
 #nevera {
     height: 6.5rem;
 }
+#final-index-mb {
+   display: none;
+}
      /*-------Footer Index------*/
 .footer-top-index {
     font-size: 0.8rem;
@@ -193,7 +197,7 @@ h4 {
     padding-top: 5.2%;
     padding-bottom: 1rem;
     color: #cacaca;
-    background-color: #3636369a;
+    
 }   
 .footer-bottom-index {
     color: rgb(167, 167, 167);
@@ -224,10 +228,6 @@ h4 {
     padding: 1rem;
     border-radius: 1rem;
 }
-.box-unit-s-b {
-    @extend .box-unit-s;
-    background-color: #777777;
-}
 .box-title-servicios {
     color: #253759;
     font-weight: bold;
@@ -253,7 +253,14 @@ h4 {
         padding-top: 1.5rem;
     }
 }
-
+.btn-primary {
+    background-color: $color-empresa; 
+    border-color: $color-empresa;
+    &:hover {
+        background-color: rgb(83, 83, 83); 
+        border-color: rgb(83, 83, 83);
+    }
+}
 /*-----------------NOSOTROS-----------------*/
 .intro-nosotros {
     padding-top: $padding-top-page;
@@ -285,7 +292,10 @@ h4 {
         font-weight: bold;
     }
 } 
-
+.box-unit-n-b {
+    @extend .box-unit-n;
+    background-color: #25375935;
+}
 /*------------------GARANTIA-----------------*/
 .intro-garantia {
     padding-top: $padding-top-page; 
@@ -384,12 +394,13 @@ $padding-top-page-579: 4rem;
  
     .footer-top-index {
         font-size: 0.6rem;
-        padding-top: 3rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
     }   
     .footer-bottom-index {
         font-size: 0.4rem;
     }
-
+    
     /*--------------------(INDEX)------------------*/
     .title {
         font-size: 1.4rem;
@@ -452,7 +463,19 @@ $padding-top-page-579: 4rem;
     #nevera {
         height: 4rem;
     }
-    
+    #final-index-mb {
+        display: block;
+        padding-top: 2rem;
+        padding-bottom: 6rem;
+    }
+    .boxes-index {
+        display: none;
+    }
+    .carousel-indicators li {
+        width: 15px;
+        height: 1px;
+    }
+   
     /*------------------(SERVICIOS)---------------*/
     .intro-servicios {
         padding-top: $padding-top-page-579;
@@ -494,7 +517,9 @@ $padding-top-page-579: 4rem;
             padding-top: 1rem;
         }
     }
-    
+    #index-slide {
+        visibility: visible;
+    }
     /*-----------------(NOSOTROS)-----------------*/
     .intro-nosotros {
         padding-top: $padding-top-page-579;
