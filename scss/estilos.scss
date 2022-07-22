@@ -443,7 +443,7 @@ $padding-top-page-579: 4rem;
     
     /*--------------------(INDEX)------------------*/
     .title {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
     .top-section {
         padding-bottom: 8%;  
@@ -453,10 +453,13 @@ $padding-top-page-579: 4rem;
         text-align: center; 
     }
     #p-number {
-        font-size: 0.5rem;
+        font-size: 0.8rem;
     }
     #number {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
+    }
+    #box-number {
+        border-radius: 0.5rem;
     }
     .intro {
         font-size: 0.9rem;
