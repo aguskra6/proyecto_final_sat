@@ -26,7 +26,21 @@ h3 {
 h4 {
     text-align: center;
 }
-
+.body-img {
+    background-image: url(../images/Electro/modern-kitchen-1772638_1920.jpg) ;
+    background-attachment: fixed;
+    color: rgb(231, 231, 231);
+}
+.background-negro {
+    background-color: #151515ad;
+    width: 100%;
+    color: rgb(231, 231, 231);
+}
+.background-blanco {
+    background-color: #e6e6e6ad;
+    width: 100%;
+    color: rgb(0, 0, 0);
+}
 /*--------------------NAV-------------------*/
 .navbar {
     box-shadow: 5px 0 10px black;  
@@ -72,8 +86,6 @@ h4 {
 
 /*-------------------INDEX-------------------*/
 .body-index {
-    background-image: url(../images/Electro/modern-kitchen-1772638_1920.jpg) ;
-    background-attachment: fixed;
     color: rgb(231, 231, 231);
 }
 .top-section {
@@ -167,8 +179,7 @@ h4 {
     margin-top: 0.7rem;
     height: 6rem;
 }
-#fan-coil {
-    padding-top: 1.7rem;
+#aire-acondicionado {
     width: 8rem;
 }
 #cocina-indus {
@@ -195,8 +206,12 @@ h4 {
     width:100%;
     margin-left: 0%;
 }
-.fan-coil {
-    padding-top: 2rem;
+.vitro {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.w-100 {
+    max-height: 189px;
 }
 .mapa {
     padding-top: 6rem;
@@ -229,7 +244,6 @@ h4 {
 
     & h3 {
         font-size: 1.3rem;
-        font-weight: bold;
     }
     & h4 {
         font-size: 1.1rem;
@@ -238,7 +252,7 @@ h4 {
 }
 .box-unit-s {
     margin: 1rem;
-    background-color:#25375920;
+    background-color:#c7c7c7b9;
     color: rgb(0, 0, 0);
     padding: 1rem;
     border-radius: 1rem;
@@ -279,15 +293,15 @@ h4 {
     margin-top: 2rem;
 }
 .contacto {
-    background-color: #3636369a;
-    width: 100%;
     padding-bottom: 2rem;
 }
 .form-control {
-    background-color: rgba(235, 235, 235, 0.989);
+    background-color: rgba(255, 255, 255, 0.386);
+    color: #a2a2a2;
 }
 .custom-select {
-    background: rgb(235, 235, 235);
+    background: rgba(255, 255, 255, 0.386);
+    color: #000000;
 }
 .formulario {
     font-weight: 400;
@@ -299,7 +313,7 @@ h4 {
     padding-top: 5.2%;
     padding-bottom: 1rem;
     color: #cacaca;
-    background-color:#3636369a;
+    background-color: #151515ad;
 }
 /*-----------------NOSOTROS-----------------*/
 .intro-nosotros {
@@ -307,7 +321,6 @@ h4 {
 
     & h3 {
         font-size: 1.3rem;
-        font-weight: bold;
     }
     & h4 {
         font-size: 1.1rem;
@@ -323,18 +336,18 @@ h4 {
     border-radius: 20px;
 }
 .box-unit-n {
-    @include box-unit-n-example (#25375920, #000000);
+    @include box-unit-n-example (#c7c7c7b9, #000000);
     & p {
         color:#242424;
     }
     & h5 {
-        color: #253759;
+        color: $color-empresa;
         font-weight: bold;
     }
 } 
 .box-unit-n-b {
     @extend .box-unit-n;
-    background-color: #25375935;
+    background-color: #a5a5a5b9;
 }
 /*------------------GARANTIA-----------------*/
 .intro-garantia {
