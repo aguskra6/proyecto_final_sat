@@ -1,7 +1,7 @@
 $font-paragraph: 1rem;
 $padding-top-page: 7rem;
 $color-empresa: #253759;
-$background-white: #e6e6e6ad;
+$background-white: #b8b8b8ad;
 $background-black:  #3636369a;
 
 * {
@@ -40,7 +40,7 @@ h4 {
 .background-negro {
     background-color: $background-black;
     width: 100%;
-    color: rgb(231, 231, 231);
+    color: rgb(255, 255, 255);
 }
 .background-blanco {
     background-color: $background-white;
@@ -96,7 +96,7 @@ h4 {
 /*-------------------INDEX-------------------*/
 .top-section {
     color: rgb(255, 255, 255); 
-    padding-bottom: 4rem;  
+    padding-bottom: 6rem;  
     width: 100%;
     padding-top: $padding-top-page + 4;
 }
@@ -134,6 +134,11 @@ h4 {
     font-size: 1.8rem;
     margin-bottom: 0%;
 }
+.btn-phone {
+    color: rgb(234, 234, 234);
+    font-size: 1.5rem;
+    padding-right: 0.6rem;
+}
 .link-number:hover {
     text-decoration: none ;
 }
@@ -142,7 +147,7 @@ h4 {
     height: fit-content;
     box-sizing: border-box;
     padding-bottom: 2rem;
-    padding-top: 2rem;
+    padding-top: 1rem;
     color: #000000;
 }
 #img-electro {
@@ -153,8 +158,28 @@ h4 {
     text-align: center;
     line-height: 3rem;
 }
-
-           /*-----Boxes-----*/
+            /*-----Boxes marcas----*/
+.marcas {
+    background-color:rgba(194, 194, 194, 0.289);
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+}
+.box-marcas {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    text-align: center;
+}
+#title-marcas {
+    text-align: center;
+    color: #e6e6e6;
+    font-size: 1.8rem;
+    padding-bottom: 3rem;
+}
+.logo-marca {
+    width: 100%;
+    align-items: center;
+}
+           /*-----Boxes electrodomesticos----*/
 #final-index {
     width: 100%;
     padding-top: 6rem;
@@ -354,7 +379,7 @@ h4 {
 .ul-garantia {
     padding-top: 0.5rem;
     padding-left: 1rem;
-    color: rgb(71, 71, 71);
+    color: rgb(22, 22, 22);
     text-align: justify;
 }
 .sub-title {
@@ -362,7 +387,7 @@ h4 {
 }
 /*--------------------FOOTER------------------*/
 .footer-top-white {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     text-align: center;
     padding-top: 8rem;
     padding-bottom: 3rem;
@@ -372,11 +397,11 @@ h4 {
 }   
 .footer-bottom-white {
     color: rgb(16, 16, 16);
-    font-size: 0.5rem;
+    font-size: 0.6rem;
     text-align: center;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    background-color: rgba(179, 179, 179, 0.692);
+    background-color: rgba(36, 36, 36, 0.722);
     width: 100%;
 }
 .footer-top-black {
@@ -430,12 +455,12 @@ $padding-top-page-579: 4rem;
     
     /*--------------------(FOOTER)----------------*/  
     .footer-top-white,.footer-top-black {
-        font-size: 0.6rem;
+        font-size: 0.7rem;
         padding-top: 2rem;
         padding-bottom: 2rem;
     } 
     .footer-bottom-white, .footer-bottom-black {
-        font-size: 0.4rem;
+        font-size: 0.5rem;
     }
     /*--------------------(INDEX)------------------*/
     .title {
@@ -443,18 +468,25 @@ $padding-top-page-579: 4rem;
     }
     .top-section {
         padding-top: $padding-top-page-579 + 1;
+        padding-bottom: 3rem;
     }
     #call {
         text-align: center; 
     }
     #p-number {
         font-size: 0.8rem;
+        padding-top: 3rem;
+    }
+    .btn-phone {
+        font-size: 0.9rem;
+        padding-right: 0.6rem;
     }
     #number {
         font-size: 0.9rem;
     }
     #box-number {
         border-radius: 0.5rem;
+        padding: 0.3rem 0.6rem;
     }
     .intro {
         font-size: 0.9rem;
@@ -464,7 +496,24 @@ $padding-top-page-579: 4rem;
     #final-index {
         padding-top: 2rem;
     }
-                        /*-----Boxes-----*/
+                    /*-----Boxes marcas----*/
+    .marcas {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    .box-marcas {
+        margin: 0.1rem;
+        padding: 0.3rem;
+    }
+    #title-marcas {
+        font-size: 1rem;
+        padding-bottom: 1rem;
+    }
+    .logo-marca {
+        width: 100%;
+        align-items: center;
+    }
+                        /*-----Boxes electrodomésticos----*/
     #title-up-boxes {
         color: #e6e6e6;
         font-size: 1rem;
