@@ -96,7 +96,7 @@ h4 {
 /*-------------------INDEX-------------------*/
 .top-section {
     color: rgb(255, 255, 255); 
-    padding-bottom: 6rem;  
+    padding-bottom: 12rem;  
     width: 100%;
     padding-top: $padding-top-page + 4;
 }
@@ -111,7 +111,7 @@ h4 {
     align-content: center;
 }
 #p-number {
-    padding-top: 2rem;
+    padding-top: 6rem;
     padding-bottom: 1rem;
     font-size: 1.4rem;
     color: rgb(234, 234, 234);;
@@ -157,10 +157,10 @@ h4 {
     font-size: 1.2rem;
     text-align: center;
     line-height: 3rem;
+    padding-top: 1rem;
 }
             /*-----Boxes marcas----*/
 .marcas {
-    background-color:rgba(194, 194, 194, 0.289);
     padding-top: 6rem;
     padding-bottom: 2rem;
 }
@@ -172,7 +172,7 @@ h4 {
 #title-marcas {
     text-align: center;
     color: #e6e6e6;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     padding-bottom: 3rem;
 }
 .logo-marca {
@@ -187,7 +187,7 @@ h4 {
 #title-up-boxes {
     text-align: center;
     color: #e6e6e6;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     padding-bottom: 3rem;
 }
 .box-unit-i {
@@ -231,7 +231,7 @@ h4 {
 #nevera {
     height: 6.5rem;
 }
-#final-index-mb {
+.final-index-mb {
    display: none;
 }
 .row {
@@ -239,18 +239,30 @@ h4 {
     margin-left: 0%;
 }
 .vitro {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
 }
 .w-100 {
     max-height: 189px;
 }
-.mapa {
-    padding-top: 6rem;
+.mapa-section {
+    padding-top: 8rem;
 }
 .map {
     border-radius: 1rem;
     box-shadow: 5px 0 10px rgba(60, 60, 60, 0.922);
+}
+.title-map {
+    text-align: center;
+    color: #e6e6e6;
+    font-size: 1.5rem;
+    padding-bottom: 3rem;
+}
+.btn-location {
+    color: rgb(234, 234, 234);
+    font-size: 1.2rem;
+    padding-right: 0.6rem;
+    padding-bottom: 2rem;
 }
 /*------------------SERVICIOS---------------*/
 .intro-servicios {
@@ -475,7 +487,7 @@ $padding-top-page-579: 4rem;
     }
     #p-number {
         font-size: 0.8rem;
-        padding-top: 3rem;
+        padding-top: 2rem;
     }
     .btn-phone {
         font-size: 0.9rem;
@@ -503,11 +515,11 @@ $padding-top-page-579: 4rem;
     }
     .box-marcas {
         margin: 0.1rem;
-        padding: 0.3rem;
+        padding: 0.1rem 0.3rem;
     }
     #title-marcas {
         font-size: 1rem;
-        padding-bottom: 1rem;
+        padding-bottom: 2rem;
     }
     .logo-marca {
         width: 100%;
@@ -515,9 +527,10 @@ $padding-top-page-579: 4rem;
     }
                         /*-----Boxes electrodomésticos----*/
     #title-up-boxes {
-        color: #e6e6e6;
         font-size: 1rem;
+        padding-top: 1rem;
         padding-bottom: 1rem;
+        color: #000000;
     }
     .box-unit-i {
         margin: 0.4rem;
@@ -550,21 +563,28 @@ $padding-top-page-579: 4rem;
     #nevera {
         height: 4rem;
     }
-    #final-index-mb {
+    .final-index-mb {
         display: block;
         padding-top: 2rem;
-        padding-bottom: 6rem;
+        padding-bottom: 3rem;
+        background-color:#ddddddd1;
+    }
+    .final-index-mb-title {
+        padding-top: 1rem;
+        background-color:#ddddddd1;
+        width: 100%;
+        color: #000000;
     }
     .boxes-index {
         display: none;
     }
-    .carousel-indicators li {
-        width: 15px;
-        height: 0.7px;
-    }
-    .mapa {
+    .mapa-section {
         padding-bottom: 2rem;
-        padding-top: 0;
+        padding-top: 4rem;
+    }
+    #title-map {
+        font-size: 1rem;
+        padding-bottom: 1rem;
     }
     /*------------------(SERVICIOS)---------------*/
     .intro-servicios {
