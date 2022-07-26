@@ -50,6 +50,8 @@ h4 {
 /*--------------------NAV-------------------*/
 .navbar {
     box-shadow: 5px 0 10px black;  
+    padding: 0.8rem 1.5rem;
+    
 }
 .blue {
     background-color: $color-empresa!important;
@@ -473,18 +475,18 @@ ul.list-inline {
     margin-bottom: 0%;
 }
 /*------------------(Media Query)------------------*/
-$padding-top-page-579: 5rem;
+$padding-top-page-579: 6rem;
 @media screen and (max-width: 579px) {
     
     /*--------------------(MENU)-------------------*/
     .logo {
-        height: 1.4rem;
+        height: 2rem;
     }
     .menu-icon {
-        width: 1.2rem;
+        width: 1.6rem;
     }
     .navbar {
-        padding: 0.3rem 0.4rem;
+        padding: 0.7rem 0.4rem;
     }
     
     /*--------------------(FOOTER)----------------*/  
