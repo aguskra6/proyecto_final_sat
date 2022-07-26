@@ -308,7 +308,7 @@ h4 {
 
 /*------------------CONTACTO-----------------*/
 .box-formulario {
-    background-color: $color-empresa;
+    background-color: rgba(0, 0, 0, 0.559);
     box-shadow: 10px 10px 10px black; 
     padding: 2rem;
     border-radius: 0.5rem;
@@ -332,7 +332,7 @@ h4 {
     }
 }
 .btn-primary {
-    background-color: black; 
+    background-color: $color-empresa; 
     border-color: $color-empresa;
     &:hover {
         background-color: rgb(83, 83, 83); 
