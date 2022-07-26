@@ -114,7 +114,7 @@ h4 {
     padding-top: 6rem;
     padding-bottom: 1rem;
     font-size: 1.4rem;
-    color: rgb(234, 234, 234);;
+    color: rgb(234, 234, 234);
 }
 #box-number {
     background-color: #000000;
@@ -142,6 +142,20 @@ h4 {
 .link-number:hover {
     text-decoration: none ;
 }
+.btn-location {
+    color: rgb(213, 213, 213);
+    font-size: 1.5rem;
+    padding-right: 0rem;
+}
+.location {
+    padding-top: 4rem;
+}
+#title-location {
+    text-align: center;
+    color: rgb(213, 213, 213);
+    font-size: 1.5rem;
+    padding-bottom: 3rem;
+}
 .div-intro {
     background-color:#ddddddd1;
     height: fit-content;
@@ -166,7 +180,7 @@ h4 {
 }
 .box-marcas {
     margin: 0.5rem;
-    padding: 0.5rem;
+    padding: 1rem;
     text-align: center;
 }
 #title-marcas {
@@ -252,17 +266,15 @@ h4 {
     border-radius: 1rem;
     box-shadow: 5px 0 10px rgba(60, 60, 60, 0.922);
 }
-.title-map {
+#title-map {
     text-align: center;
-    color: #e6e6e6;
-    font-size: 1.5rem;
+    color: rgb(218, 218, 218);
+    font-size: 1.2rem;
     padding-bottom: 3rem;
 }
-.btn-location {
-    color: rgb(234, 234, 234);
+.btn-location-map {
+    color: rgb(218, 218, 218);
     font-size: 1.2rem;
-    padding-right: 0.6rem;
-    padding-bottom: 2rem;
 }
 /*------------------SERVICIOS---------------*/
 .intro-servicios {
@@ -293,12 +305,22 @@ h4 {
 }
 
 /*------------------CONTACTO-----------------*/
+.box-formulario {
+    background-color: $color-empresa;
+    box-shadow: 10px 10px 10px black; 
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
 #intro-forms {
     padding-top: $padding-top-page;
 
     & h3 {
         font-size: 1.3rem;
     }
+    & h4 {
+        font-size: 1.1rem;
+        line-height: 2.3rem;
+    } 
 }
 .form-style {
     line-height: 1.7rem;
@@ -308,7 +330,7 @@ h4 {
     }
 }
 .btn-primary {
-    background-color: $color-empresa; 
+    background-color: black; 
     border-color: $color-empresa;
     &:hover {
         background-color: rgb(83, 83, 83); 
@@ -451,7 +473,7 @@ ul.list-inline {
     margin-bottom: 0%;
 }
 /*------------------(Media Query)------------------*/
-$padding-top-page-579: 4rem;
+$padding-top-page-579: 5rem;
 @media screen and (max-width: 579px) {
     
     /*--------------------(MENU)-------------------*/
@@ -476,7 +498,7 @@ $padding-top-page-579: 4rem;
     }
     /*--------------------(INDEX)------------------*/
     .title {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
     .top-section {
         padding-top: $padding-top-page-579 + 1;
@@ -486,8 +508,8 @@ $padding-top-page-579: 4rem;
         text-align: center; 
     }
     #p-number {
-        font-size: 0.8rem;
-        padding-top: 2rem;
+        font-size: 0.9rem;
+        padding-top: 4rem;
     }
     .btn-phone {
         font-size: 0.9rem;
@@ -499,6 +521,16 @@ $padding-top-page-579: 4rem;
     #box-number {
         border-radius: 0.5rem;
         padding: 0.3rem 0.6rem;
+    }
+    .btn-location {
+        font-size: 1rem;
+    }
+    .location {
+        padding-top: 4rem;
+    }
+    #title-location {
+        font-size: 1rem;
+        padding-bottom: 1rem;
     }
     .intro {
         font-size: 0.9rem;
@@ -514,8 +546,8 @@ $padding-top-page-579: 4rem;
         padding-bottom: 4rem;
     }
     .box-marcas {
-        margin: 0.1rem;
-        padding: 0.1rem 0.3rem;
+        margin: 0.2rem;
+        padding: 0.1rem 0.5rem;
     }
     #title-marcas {
         font-size: 1rem;
@@ -582,20 +614,23 @@ $padding-top-page-579: 4rem;
         padding-bottom: 2rem;
         padding-top: 4rem;
     }
+    .btn-location-map {
+        font-size: 0.8rem;
+    }
     #title-map {
-        font-size: 1rem;
-        padding-bottom: 1rem;
+        font-size: 0.8rem;
+        padding-bottom: 0.6rem;
     }
     /*------------------(SERVICIOS)---------------*/
     .intro-servicios {
         padding-top: $padding-top-page-579;
 
         & h3 {
-            font-size: 1rem;
-            padding-bottom: 1rem;
+            font-size: 1.2rem;
+            padding-bottom: 2rem;
         }
         & h4 {
-            font-size: 0.9rem;
+            font-size: 1rem;
             line-height: 1.5rem;
         }
     }
@@ -612,12 +647,19 @@ $padding-top-page-579: 4rem;
     }
     
     /*------------------(CONTACTO)----------------*/
+    .box-formulario {
+        font-size: 0.9rem;
+    }
     #intro-forms {
         padding-top: $padding-top-page-579;
 
         & h3 {
+            font-size: 1.2rem;
+            padding-bottom: 2rem;
+        }
+        & h4 {
             font-size: 1rem;
-            padding-bottom: 1rem;
+            line-height: 1.5rem;
         }
     }
     .form-style {
@@ -631,16 +673,19 @@ $padding-top-page-579: 4rem;
         padding-top: 1rem;
         padding-bottom: 2rem;
     }
+    .custom-select {
+        font-size: 0.9rem;
+    }
     /*-----------------(NOSOTROS)-----------------*/
     .intro-nosotros {
         padding-top: $padding-top-page-579;
 
         & h3 {
-            font-size: 1rem;
-            padding-bottom: 1rem;
+            font-size: 1.2rem;
+            padding-bottom: 2rem;
         }
         & h4 {
-            font-size: 0.9rem;
+            font-size: 1rem;
             line-height: 1.5rem;
         }
     }
@@ -664,11 +709,11 @@ $padding-top-page-579: 4rem;
         padding-top: $padding-top-page-579; 
 
         & h3 {
-            font-size: 1rem;
-            padding-bottom: 1rem;
+            font-size: 1.2rem;
+            padding-bottom: 2rem;
         }
         & h4 {
-            font-size: 0.9rem;
+            font-size: 1rem;
             line-height: 1.5rem;
             padding-bottom: 1.5rem;
         }
